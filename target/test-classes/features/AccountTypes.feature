@@ -1,15 +1,16 @@
+
 Feature: Account types
-  @wip
+  @wip @smoke
   Scenario: Driver user
     Given the user is logged in as a "driver"
     When the user navigates to "Activities" tab and "Calendar Events" module
     Then the title should contain "Calendar Events - Activities"
-  @wip
+  @wip @smoke
   Scenario: Sales manager user
     Given the user is logged in as a "sales manager"
     When the user navigates to "Customers" tab and "Accounts" module
     Then the title should contain "Accounts - CustomerS"
-  @wip
+  @wip @smoke
   Scenario: Store manager
     Given the user is logged in as a "store manager"
     When the user navigates to "Customers" tab and "Contacts" module

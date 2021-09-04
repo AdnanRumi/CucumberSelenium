@@ -27,6 +27,11 @@ public class ContactsPage extends BasePage {
 
     }
 
+    public void clickEmailToSeeDetails(String email) {
+
+        getContactEmail(email).click();
+    }
+
     public WebElement getContactPhone(String phone) {
 
         String xpath = "//a[@class='nowrap'][contains(@href,'tel')]";

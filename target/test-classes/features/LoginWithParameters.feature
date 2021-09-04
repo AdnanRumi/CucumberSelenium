@@ -1,3 +1,4 @@
+
 Feature: Login as different users
 
   Scenario: Login with different credentials

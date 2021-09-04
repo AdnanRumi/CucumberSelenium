@@ -1,4 +1,4 @@
-@contacts
+
 Feature: Contacts page
 
   Scenario: Default page number
@@ -16,3 +16,18 @@ Feature: Contacts page
       | firstname | Jace     |
       | lastname  | Kassulke   |
     Then the user should be able to login
+@wip @db
+  Scenario: Contacts test with email
+    Given the user logged in as "sales manager"
+#    And the user enters valid credentials for salesmanagers
+    And the user navigates to "Customers" tab and "Contacts" module
+    When the user clicks "mbrackstone9@example.com" from contacts
+    Then the information for "mbrackstone9@example.com" should be matching one in the DB
+
+#  Scenario: Contacts with db2
+
+#    Given the user logged in as "sales manager"
+#    And the user navigates to "Customers" "Contacts"
+#    When the user clicks the "mbrackstone9@example.com" from contacts
+#    Then the information should be same with database
+
